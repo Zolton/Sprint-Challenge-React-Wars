@@ -2,11 +2,16 @@ import React from "react";
 
 function StarWarsChars(props) {
   return (
-    <>
-      {/* {console.log("char props", props)} */}
-      <h1>{props.indivSWChar.name}</h1>
-      <h4>{props.indivSWChar.age}</h4>
-    </>
+    <div>
+      {console.log("char props", props)}
+      <h3>{props.indivSWChar.name}</h3>
+      <ul>
+        <li>Gender: {props.indivSWChar.gender}</li>
+        <li>Height: {props.indivSWChar.height}</li>
+        <li>Mass: {props.indivSWChar.height}</li>
+        <li>Hair Color: {props.indivSWChar.hair_color}</li>
+      </ul>
+    </div>
   );
 }
 

@@ -3,7 +3,8 @@ import StarWarsMap from "./components/StarWarsMap";
 import "./App.css";
 import axios from "axios";
 import "semantic-ui-css/semantic.min.css";
-import Loader from "./components/Loader";
+import { Dimmer, Loader, Image, Segment } from 'semantic-ui-react'
+import LoaderFile from "./components/LoaderFile";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -36,7 +37,7 @@ const App = () => {
     <div className="App">
       <h1 className="Header">Star Wars is owed a paycheck and some royalties for this one</h1>
       {/* {console.log("from below return", starWarsChar)} */}
-      {starWarsChar ? <StarWarsMap starWarsChar={starWarsChar} /> : <Loader />}
+      {starWarsChar ? <StarWarsMap starWarsChar={starWarsChar} /> : <LoaderFile />}
       {/* {stretchGoal ? stretchGoal.map(name=> name) : null} */}
     </div>
   );

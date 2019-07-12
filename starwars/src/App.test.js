@@ -12,6 +12,14 @@ describe('<App />', () => {
   });
 });
 
+describe('<StarWarsMap />', () => {
+    it('should match snapshot', () => {
+      const tree = renderer.create(<StarWarsMap />).toJSON();
+  
+      expect(tree).toMatchSnapshot();
+    });
+  });
+
 describe('<StarWarsChars />', () => {
     it('should match snapshot', () => {
       const tree = renderer.create(<StarWarsChars />).toJSON();

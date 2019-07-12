@@ -7,7 +7,7 @@ exports[`<App /> should match snapshot 1`] = `
   <h1
     className="Header"
   >
-    Star Wars is owed a paycheck
+    Star Wars is owed a paycheck and some royalties for this one
   </h1>
 </div>
 `;

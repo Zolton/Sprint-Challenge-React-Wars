@@ -3,7 +3,7 @@ import React from "react";
 function StarWarsChars(props) {
   return (
     <div>
-      {console.log("char props", props)}
+      {/* {console.log("char props", props)} */}
       <h3>{props.indivSWChar.name}</h3>
       <ul>
         <li>Gender: {props.indivSWChar.gender}</li>

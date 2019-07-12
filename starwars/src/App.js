@@ -14,6 +14,7 @@ const App = () => {
   // sync up with, if any.
 
   const [starWarsChar, setStarWarsChar] = useState([]);
+  //const [stretchGoal, setStretchGoal] = useState();
 
   useEffect(() => {
     axios
@@ -22,11 +23,21 @@ const App = () => {
     //.then(console.log("starwarschar in axios", starWarsChar))
   }, []);
 
+  // useEffect(() => {
+  //   axios
+  //     .get("https://dog.ceo/api/breeds/list/all")
+  //     //.then(res=>(console.log("new stuff", res.data.message.hound)))
+  //     .then(res=>setStretchGoal(res.data.message.hounds))
+  //     //.then(res => setStarWarsChar(res.data.results));
+  //   //.then(console.log("starwarschar in axios", starWarsChar))
+  // }, []);
+
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
       {/* {console.log("from below return", starWarsChar)} */}
       {starWarsChar ? <StarWarsMap starWarsChar={starWarsChar} /> : <Loader />}
+      {/* {stretchGoal ? stretchGoal.map(name=> name) : null} */}
     </div>
   );
 };

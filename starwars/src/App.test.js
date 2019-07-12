@@ -1,29 +1,29 @@
-import React from 'react';
-import renderer from 'react-test-renderer';
+import React from "react";
+import renderer from "react-test-renderer";
 
-import App from './App';
-import StarWarsChars from './components/StarWarsChars';
+import App from "./App";
+import StarWarsChars from "./components/StarWarsChars";
 
-describe('<App />', () => {
-  it('should match snapshot', () => {
+describe("<App />", () => {
+  it("should match snapshot", () => {
     const tree = renderer.create(<App />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
 });
 
-describe('<StarWarsMap />', () => {
-    it('should match snapshot', () => {
-      const tree = renderer.create(<StarWarsMap />).toJSON();
-  
-      expect(tree).toMatchSnapshot();
-    });
-  });
+describe("<StarWarsMap />", () => {
+  it("should match snapshot", () => {
+    const tree = renderer.create(<StarWarsMap />).toJSON();
 
-describe('<StarWarsChars />', () => {
-    it('should match snapshot', () => {
-      const tree = renderer.create(<StarWarsChars />).toJSON();
-  
-      expect(tree).toMatchSnapshot();
-    });
+    expect(tree).toMatchSnapshot();
   });
+});
+
+describe("<StarWarsChars />", () => {
+  it("should match snapshot", () => {
+    const tree = renderer.create(<StarWarsChars />).toJSON();
+
+    expect(tree).toMatchSnapshot();
+  });
+});

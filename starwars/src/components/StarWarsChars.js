@@ -16,17 +16,22 @@
 //   );
 // }
 
-import React from 'react'
-import { List } from 'semantic-ui-react'
+import React from "react";
+import { List } from "semantic-ui-react";
 
-const StarWarsChars = (props) => (
-  <List class="ui bulleted list">>
-    <List.Item><h3>{props.indivSWChar.name}</h3></List.Item>
+const StarWarsChars = props => (
+  <List class="ui bulleted list">
+    >
+    <List.Item>
+      <h3>{props.indivSWChar.name}</h3>
+    </List.Item>
     <List.Item>Gender: {props.indivSWChar.gender}</List.Item>
     <List.Item>Height: {props.indivSWChar.height}</List.Item>
     <List.Item>Mass: {props.indivSWChar.height}</List.Item>
+    <List.Item>Skin color: {props.indivSWChar.skin_color}</List.Item>
+    <List.Item>Hair Color: {props.indivSWChar.hair_color}</List.Item>
   </List>
-)
+);
 
 //export default ListExampleBasic
 export default StarWarsChars;

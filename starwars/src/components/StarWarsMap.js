@@ -4,8 +4,8 @@ import StarWarsChars from "./StarWarsChars";
 function StarWarsMap(props) {
   return (
     <>
-      {console.log("starwarsmap comp props", props)}
-      {props.map(indivSWChar => (
+      {/* {console.log("starwarsmap comp props", props)} */}
+      {props.starWarsChar.map(indivSWChar => (
         <StarWarsChars indivSWChar={indivSWChar} />
       ))}
     </>

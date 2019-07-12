@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import StarWarsMap from "./components/StarWarsMap";
 import "./App.css";
 import axios from "axios";
+import { Loader } from "semantic-ui-react";
+import "semantic-ui-css/semantic.min.css";
+import LoaderFile from "./components/LoaderFile"
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -21,19 +24,16 @@ const App = () => {
   }, []);
 
   return (
-    
-      <div className="App">
-        <h1 className="Header">React Wars</h1>
-        {console.log("from below return", starWarsChar)}
-        {starWarsChar ? (
-          <StarWarsMap starWarsChar={starWarsChar} />
-        ) : (
-          <div> Technical difficulties </div>
-        )
-        //<Loader />
-        }
-      </div>
-    
+    <div className="App">
+      <h1 className="Header">React Wars</h1>
+      {/* {console.log("from below return", starWarsChar)} */}
+      {starWarsChar ? (
+        <StarWarsMap starWarsChar={starWarsChar} />
+      ) : (
+        <div> <LoaderFile /> </div>
+      )
+      }
+    </div>
   );
 };
 

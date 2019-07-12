@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Star Wars is owed a paycheck</h1>
+      <h1 className="Header">Star Wars is owed a paycheck and some royalties for this one</h1>
       {/* {console.log("from below return", starWarsChar)} */}
       {starWarsChar ? <StarWarsMap starWarsChar={starWarsChar} /> : <Loader />}
       {/* {stretchGoal ? stretchGoal.map(name=> name) : null} */}

@@ -11,3 +11,15 @@ exports[`<App /> should match snapshot 1`] = `
   </h1>
 </div>
 `;
+
+exports[`<StarWarsChars /> should match snapshot 1`] = `
+<div
+  className="App"
+>
+  <h1
+    className="Header"
+  >
+    Star Wars is owed a paycheck and some royalties for this one
+  </h1>
+</div>
+`;

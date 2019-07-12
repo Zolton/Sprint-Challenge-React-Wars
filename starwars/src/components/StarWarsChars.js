@@ -9,6 +9,7 @@ function StarWarsChars(props) {
         <li>Gender: {props.indivSWChar.gender}</li>
         <li>Height: {props.indivSWChar.height}</li>
         <li>Mass: {props.indivSWChar.height}</li>
+        <li>Skin color: {props.indivSWChar.skin_color}</li>
         <li>Hair Color: {props.indivSWChar.hair_color}</li>
       </ul>
     </div>
